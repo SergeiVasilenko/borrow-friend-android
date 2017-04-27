@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+			android:id="@+id/navigation_get"
+			android:icon="@drawable/ic_arrow_downward_black_24dp"
+			android:title="@string/credit_get"/>
+
+	<item
+			android:id="@+id/navigation_dashboard"
+			android:icon="@drawable/ic_dashboard_black_24dp"
+			android:title="@string/title_dashboard"/>
+
+	<item
+			android:id="@+id/navigation_give"
+			android:icon="@drawable/ic_arrow_upward_black_24dp"
+			android:title="@string/credit_give"/>
+
+</menu>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	<LinearLayout
+			android:id="@+id/item"
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:paddingStart="16dp"
+			android:paddingEnd="16dp"
+			android:orientation="horizontal"
+			android:clickable="true"
+			android:background="?attr/selectableItemBackground">
+
+		<ImageView
+				android:id="@+id/avatar"
+				android:layout_width="72dp"
+				android:layout_height="72dp"
+				android:layout_marginTop="14dp"
+				android:contentDescription="@null"
+				android:background="@drawable/circle_gray"/>
+
+		<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginStart="16dp"
+				android:gravity="center_vertical"
+				android:orientation="vertical">
+
+			<TextView
+					android:id="@+id/name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="18dp"
+					android:layout_gravity="center_vertical"
+					android:maxLines="1"
+					android:ellipsize="end"
+					android:includeFontPadding="false"
+					android:textColor="@color/gray33"
+					android:textSize="16sp"
+					tools:text="Vasya Poopking"/>
+
+			<TextView
+					android:id="@+id/amount"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="4dp"
+					android:layout_gravity="center_vertical"
+					android:maxLines="1"
+					android:ellipsize="end"
+					android:includeFontPadding="false"
+					android:textColor="@color/gray80"
+					android:textSize="16sp"
+					tools:text="2 500"/>
+
+			<LinearLayout
+					android:id="@+id/ratingLayout"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="4dp"
+					android:orientation="horizontal"
+					android:layout_gravity="center_vertical">
+				<TextView
+						android:id="@+id/ratingLabel"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:includeFontPadding="false"
+						android:textColor="@color/gray80"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:text="@string/rating"/>
+				<TextView
+						android:id="@+id/rating"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="4dp"
+						android:maxLines="1"
+						android:ellipsize="end"
+						android:includeFontPadding="false"
+						android:textColor="@color/green"
+						android:textSize="14sp"
+						tools:text="+10500"/>
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_gravity="center"
+				android:orientation="vertical"
+				android:gravity="center">
+
+			<TextView
+					android:id="@+id/percentPerDay"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="26sp"
+					tools:text="0.1%"/>
+
+			<TextView
+					android:id="@+id/perDay"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="-6dp"
+					android:textSize="12sp"
+					android:text="@string/perDay"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:layout_marginStart="16dp"
+			android:orientation="horizontal">
+		<TextView
+				android:id="@+id/durationMinLabel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:includeFontPadding="false"
+				android:textColor="@color/gray80"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:text="@string/duration_min"/>
+		<TextView
+				android:id="@+id/durationMin"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="4dp"
+				android:maxLines="1"
+				android:ellipsize="end"
+				android:includeFontPadding="false"
+				android:textSize="14sp"
+				tools:text="1"/>
+	</LinearLayout>
+
+	<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginStart="16dp"
+			android:orientation="horizontal">
+		<TextView
+				android:id="@+id/durationMaxLabel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:includeFontPadding="false"
+				android:textColor="@color/gray80"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:text="@string/duration_max"/>
+		<TextView
+				android:id="@+id/durationMax"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="4dp"
+				android:maxLines="2"
+				android:ellipsize="end"
+				android:includeFontPadding="false"
+				android:textSize="14sp"
+				tools:text="10"/>
+	</LinearLayout>
+
+	<TextView
+			android:id="@+id/askTitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+			tools:text="@string/ask_title_example"/>
+
+	<Button
+			android:id="@+id/action"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:layout_gravity="center_horizontal"
+			android:paddingLeft="24dp"
+			android:paddingRight="24dp"
+			style="@style/LoginButton"
+			app:theme="@style/AppTheme.Insert.ButtonTheme"
+			android:text="@string/put_ask"/>
+
+	<TextView
+			android:id="@+id/nearFriends"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="16dp"
+			android:layout_marginTop="16dp"
+			android:layout_marginBottom="8dp"
+			android:textSize="18sp"
+			android:textColor="@color/gray33"
+			android:text="@string/near_friend"/>
+</LinearLayout>

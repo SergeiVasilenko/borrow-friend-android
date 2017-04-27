@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<android.support.design.widget.AppBarLayout
+			android:id="@+id/appBar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:theme="@style/AppTheme.Insert.Toolbar">
+
+		<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				app:contentInsetLeft="0dp"
+				app:contentInsetStart="0dp"
+				app:contentInsetStartWithNavigation="0dp">
+
+			<TextView
+					android:id="@+id/title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="-16dp"
+					android:includeFontPadding="false"
+					android:textColor="@color/white"
+					android:textSize="20sp"/>
+
+		</android.support.v7.widget.Toolbar>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<android.support.design.widget.TextInputLayout
+			android:id="@+id/sumLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp">
+		<android.support.design.widget.TextInputEditText
+				android:id="@+id/sum"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="number"
+				android:imeOptions="actionNext"
+				android:hint="@string/sum"
+				android:textColorHint="@color/grayB3"
+				android:textColor="@color/gray33"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+			android:id="@+id/percentLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp">
+		<android.support.design.widget.TextInputEditText
+				android:id="@+id/percent"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="numberDecimal"
+				android:imeOptions="actionNext"
+				android:hint="@string/percent"
+				android:textColor="@color/gray33"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+			android:id="@+id/durationMinLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp">
+		<android.support.design.widget.TextInputEditText
+				android:id="@+id/durationMin"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="number"
+				android:imeOptions="actionNext"
+				android:hint="@string/duration_min"
+				android:textColor="@color/gray33"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+			android:id="@+id/durationMaxLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp">
+		<android.support.design.widget.TextInputEditText
+				android:id="@+id/durationMax"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="number"
+				android:imeOptions="actionNext"
+				android:hint="@string/duration_max"
+				android:textColor="@color/gray33"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+			android:id="@+id/aimCreditLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp">
+		<android.support.design.widget.TextInputEditText
+				android:id="@+id/aimCredit"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textAutoCorrect"
+				android:imeOptions="actionNext"
+				android:hint="@string/credit_aim"
+				android:textColor="@color/gray33"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<Button
+			android:id="@+id/action"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:layout_gravity="center_horizontal"
+			style="@style/LoginButton"
+			app:theme="@style/AppTheme.Insert.ButtonTheme"
+			android:text="@string/post_offer"/>
+
+</LinearLayout>

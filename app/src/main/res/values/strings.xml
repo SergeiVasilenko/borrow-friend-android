@@ -1,0 +1,63 @@
+<resources>
+	<string name="app_name">Займи другу</string>
+
+	<string name="title_dashboard">Dashboard</string>
+
+	<string name="login">Log in</string>
+
+	<string name="error_auth">Для использования приложения необходима авторизация в ВК</string>
+
+	<string name="cancel">Отмена</string>
+
+	<string name="credit_income">Дебит:</string>
+	<string name="credit_outcome">Кредит:</string>
+
+	<string name="credit_get">Взять</string>
+	<string name="credit_give">Дать</string>
+
+	<string name="rating">Рейтинг:</string>
+	<string name="perDay">в день</string>
+	<string name="rub">%d руб.</string>
+
+	<string name="sum">Сумма</string>
+	<string name="percent">Процент (в день)</string>
+	<string name="duration">Срок (дней)</string>
+	<string name="duration_min">Минимальный срок (дней)</string>
+	<string name="duration_max">Максимальный срок (дней)</string>
+	<string name="duration_before">Срок до </string>
+
+	<plurals name="day">
+		<item quantity="one">%d день</item>
+		<item quantity="few">%d дня</item>
+		<item quantity="other">%d дней</item>
+	</plurals>
+
+	<string name="post_ask">Подать заявку</string>
+	<string name="post_offer">Сделать предложение</string>
+	<string name="put_ask">Выдать кредит</string>
+	<string name="put_offer">Подать заявку</string>
+	<string name="error">Ошибка</string>
+
+	<string name="deal">Сделка</string>
+
+	<string name="near_friend">Граф друзей</string>
+
+	<string name="you_own">Вы должны</string>
+	<string name="owns_to_you">Вам должны</string>
+
+	<string name="balance">Баланс: </string>
+
+	<string name="add_balance">Пополнить</string>
+	<string name="withdraw_balance">Снять</string>
+
+	<string name="add_balance_title">Пополнение</string>
+	<string name="withdraw_title">Снятие</string>
+
+	<string name="error_balance">Сумма должна быть больше нуля</string>
+
+	<string name="credit_aim">Цель кредита</string>
+
+	<string name="no_relationships">Нет ближайших связей</string>
+
+	<string name="ask_title_example">Хочу купить себе крузак, дом на багамах и уехать туда жить. А ещё есть небольшая идея для стартапа. Вы мне дайте денег, а я найду, куда их правильно потратить.</string>
+</resources>

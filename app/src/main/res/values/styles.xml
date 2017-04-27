@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="colorControlNormal">@color/white</item>
+		<item name="android:colorControlNormal" tools:ignore="NewApi">@color/white</item>
+	</style>
+
+	<style name="AppTheme.Auth">
+		<item name="android:textColorPrimary">@color/white</item>
+		<item name="colorControlNormal">@color/blue</item>
+		<item name="android:colorButtonNormal" tools:targetApi="lollipop">@color/blue</item>
+	</style>
+
+	<style name="AppTheme.Insert" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+	<style name="AppTheme.Insert.ButtonTheme">
+		<item name="colorControlNormal">@color/blue</item>
+		<item name="android:colorButtonNormal" tools:targetApi="lollipop">@color/blue</item>
+	</style>
+
+	<style name="AppTheme.Insert.Toolbar">
+		<item name="colorControlNormal">@color/white</item>
+	</style>
+
+	<style name="LoginButton" parent="Widget.AppCompat.Button">
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+</resources>
